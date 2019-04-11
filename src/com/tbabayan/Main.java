@@ -19,50 +19,57 @@ public class Main {
         locations.put(4, new Location(4, "You are in a valley"));
         locations.put(5, new Location(5, "You are in a forest"));
 
-        // define location connections
-        locations.get(1).addExit("north", 5);
-        locations.get(1).addExit("east", 3);
-        locations.get(1).addExit("south", 4);
-        locations.get(1).addExit("west", 2);
-        locations.get(1).addExit("quit", 0);
+        // define available exit directions
+        locations.get(1).addExit("N", 5);
+        locations.get(1).addExit("E", 3);
+        locations.get(1).addExit("S", 4);
+        locations.get(1).addExit("W", 2);
+        locations.get(2).addExit("N", 5);
+        locations.get(3).addExit("W", 1);
+        locations.get(4).addExit("N", 1);
+        locations.get(4).addExit("W", 2);
+        locations.get(5).addExit("W", 2);
+        locations.get(5).addExit("S", 1);
 
-        locations.get(2).addExit("north", 5);
-        locations.get(2).addExit("quit", 0);
+        // define vocabulary of user commands
+        Map<String, String> vocabulary = new HashMap<String, String>();
+        vocabulary.put("NORTH", "N");
+        vocabulary.put("SOUTH", "S");
+        vocabulary.put("WEST", "W");
+        vocabulary.put("EAST", "E");
+        vocabulary.put("QUIT", "Q");
 
-        locations.get(3).addExit("west", 1);
-        locations.get(3).addExit("quit", 0);
-
-        locations.get(4).addExit("north", 1);
-        locations.get(4).addExit("west", 2);
-        locations.get(4).addExit("quit", 0);
-
-        locations.get(5).addExit("west", 2);
-        locations.get(5).addExit("south", 1);
-        locations.get(5).addExit("quit", 0);
-
-
+        // change the location based on user input
         int loc = 1;
         while (true) {
             System.out.println(locations.get(loc).getDescription());
             if (loc == 0) {
+
                 break;
             }
-//            loc = scanner.nextInt();
             Map<String, Integer> exits = locations.get(loc).getExits();
             System.out.print("Available exits are: ");
             for (String exit : exits.keySet()) {
                 System.out.print(exit + " ");
             }
             System.out.println();
-            String direction = scanner.nextLine().toLowerCase();
-            if(exits.containsKey(direction)) {
+            String direction = scanner.nextLine().toUpperCase();
+            if (direction.length() > 1) {
+                String [] words = direction.split(" ");
+                for (String word : words) {
+                    if (vocabulary.containsKey(word)) {
+                        direction = vocabulary.get(word);
+
+                        break;
+                    }
+                }
+            }
+            if (exits.containsKey(direction)) {
                 loc = exits.get(direction);
             } else {
                 System.out.println("You can not go in that direction");
-
             }
         }
-
 
     }
 }
