@@ -4,7 +4,6 @@
     <list default="true" id="1fdf6793-1ab5-4d26-88e6-42cc9de1fe11" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tbabayan/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbabayan/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tbabayan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tbabayan/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tbabayan/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
+            <state relative-caret-position="1020">
               <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tbabayan/Location.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="465">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -71,8 +70,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/tbabayan/test.java" />
-        <option value="$PROJECT_DIR$/src/com/tbabayan/Location.java" />
         <option value="$PROJECT_DIR$/src/com/tbabayan/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/tbabayan/Location.java" />
       </list>
     </option>
   </component>
@@ -113,7 +112,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555322741484" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555323196037" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554991451581</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="made Location class immutable">
+      <created>1555322707989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555322707989</updated>
+    </task>
+    <task id="LOCAL-00004" summary="made Location class immutable">
+      <created>1555322764834</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555322764834</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -255,7 +268,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exits added" />
     <MESSAGE value="advanced user commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="advanced user commands" />
+    <MESSAGE value="made Location class immutable" />
+    <option name="LAST_COMMIT_MESSAGE" value="made Location class immutable" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/tbabayan/test.java">
@@ -265,17 +279,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tbabayan/Location.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tbabayan/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tbabayan/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tbabayan/Location.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+        <state relative-caret-position="465">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
