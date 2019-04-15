@@ -11,18 +11,14 @@ public class Location {
 
 
     // constructor
-    public Location(int locationID, String description) {
+    public Location(int locationID, String description, Map<String, Integer> exits) {
         this.locationID = locationID;
         this.description = description;
-        this.exits = new HashMap<String, Integer>();
+        this.exits = exits;
         this.exits.put("Q", 0);
     }
 
-    // methods
-    public void addExit(String direction, int location) {
-        exits.put(direction, location);
-    }
-
+    // getters
     public int getLocationID() {
         return locationID;
     }
